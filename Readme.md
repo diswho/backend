@@ -28,4 +28,4 @@
 
 # Run the server with
 
-`uvicorn main:app --reload`
+`uvicorn app.main:app --reload`
