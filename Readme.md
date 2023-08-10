@@ -10,15 +10,17 @@
 
 `python -m venv venv`
 
-`python -m pip install --upgrade pip`
-
 `venv\Scripts\activate`
+
+`python -m pip install --upgrade pip`
 
 `pip install python-dotenv`
 
 `pip install pipreqs`
 
 `pipreqs . --force`
+
+`pip install -r requirements.txt`
 
 # Installation
 
