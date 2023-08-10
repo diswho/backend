@@ -28,6 +28,8 @@
 
 `pip install "uvicorn[standard]"`
 
+`pip install pydantic-settings`
+
 # Run the server with
 
 `uvicorn app.main:app --reload`
