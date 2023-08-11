@@ -14,12 +14,12 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
-    # SECRET_KEY: str = secrets.token_urlsafe(32)
+    SECRET_KEY: str = secrets.token_urlsafe(32)
     # ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
     # SERVER_NAME: str
     # SERVER_HOST: AnyHttpUrl
-    # BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
-    # PROJECT_NAME: str
+    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
+    PROJECT_NAME: str = "Sokthavy"
     # SENTRY_DSN: Optional[HttpUrl] = None
     # POSTGRES_SERVER: str
     # POSTGRES_USER: str
@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     # FIRST_SUPERUSER: EmailStr
     # FIRST_SUPERUSER_PASSWORD: str
     # USERS_OPEN_REGISTRATION: bool = False
-    # model_config = SettingsConfigDict(env_file=".env")
+    model_config = SettingsConfigDict(env_file=".env")
 
 
 settings = Settings()
